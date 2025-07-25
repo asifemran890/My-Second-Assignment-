@@ -1,24 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+.container {
+  width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  background: #f5f8ff;
 }
-
+section {
+  margin: 100px auto;
+}
 /*navber sytle */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: #f6f8fe;
+  padding: 10px 20px;
+  /*background: #ffffff;*/
 }
 
 .logo img {
-  height: 60px;
+  height: 71px;
+  width: 135px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .nav-right {
   display: flex;
   align-items: center;
@@ -37,7 +50,7 @@ body {
   text-decoration: none;
   color: #777;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .nav-links a.active {
@@ -45,133 +58,162 @@ body {
   color: #000;
 }
 .cart {
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
   display: flex;
   align-items: center;
   gap: 8px;
 }
+/* hero Section*/
 
-.flowers-section {
-  display: flex;
+.section-container {
   max-width: 1140px;
   margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  padding: 40px 0px;
+  gap: 20px;
   font-family: "Segoe UI", sans-serif;
 }
-
-.flowers-text {
+.text-block {
   flex: 1;
+  padding: 0px 20px;
+}
+.text-block h2 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+  font-family: "Noto Serif", serif;
 }
 .text-black {
   color: #222;
 }
-.lowers-text h2 {
-  font-size: 65px;
-  font-weight: 700;
-  font: "Noto Serif";
-  height: 1px;
-}
 .text-orange {
-  color: #e95a08;
+  color: #e67e22;
 }
-
-.text-dec {
+.description {
   margin-top: 20px;
   font-size: 16px;
   color: #666;
   line-height: 1.6;
 }
-.img-flower {
+.image-block {
+  width: 100%;
   flex: 1;
-  text-align: right;
 }
-.img-flower img {
+.image-block img {
   max-width: 100%;
   height: auto;
 }
 
+/* hero Section */
+
 .plant-container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 40px 0px;
+  /* padding: 20px 0px;*/
   font-family: "Segoe UI", sans-serif;
   text-align: center;
 }
+.plant-container h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
 
-/*plant-card*/
-
+.indulge-text {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
 .plant-card {
-  width: 270px;
-  height: 443px;
-  flex-direction: column;
-  align-items: center;
+  background-color: #fff;
+  border: 0pc solid #ddd;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(0, 0, 0, 0.05);
 }
 
 .plant-flex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.plant-items {
-  width: 1140px;
-  top: 182px;
-  left: 150px;
-}
-.plant-price h3 {
-  color: #111111;
-  font-weight: 500;
-}
-.plant-card img {
-  height: 322px;
-  width: 270px;
-}
-.plant-card h3,
-p {
-  text-align: center;
-}
-.add-cart {
-  width: 100%;
-  background: rgb(233, 90, 8);
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 600;
-  padding: 10px;
-}
-
-.flower-lover {
-  display: flex;
-  justify-content: space-between;
-
-  margin-top: 210px;
   gap: 20px;
 }
-.flower-lover img {
-  height: 666px;
-  flex: none;
+
+.plant-card h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.plant-card img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.plant-price {
+  color: black;
+  font-size: 22px;
+  margin: 16px 0px;
+  font-weight: bold;
 }
 
-.flower h2 {
-  width: 540px;
-  height: 137px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-weight: 700;
-  font-size: 50px;
+.add-cart {
+  border: none;
+  width: 100%;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.flower li {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: Inter;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  padding: 20px;
+
+/*Flower & Plants Lover SECTION*/
+
+.flower-section {
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  gap: 80px;
+  font-family: "segoe UI", sans-serif;
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+}
+.image-box img:first-child {
+  width: 530px;
+  height: 597px;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+  height: auto;
+}
+
+.content-box {
+  flex: 1;
+}
+
+.content-box h2 {
+  font-size: 36px;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+
+.content-box ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  line-height: 1;
+  color: #555;
+  width: 540px;
+  height: 60px;
 }
 
 @media screen and (max-width: 576px) {
