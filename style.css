@@ -14,12 +14,11 @@ section {
   margin: 100px auto;
 }
 /*navber sytle */
-.navbar {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  /*background: #ffffff;*/
 }
 
 .logo img {
@@ -36,6 +35,7 @@ section {
   display: flex;
   align-items: center;
   gap: 40px;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -70,7 +70,7 @@ section {
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   gap: 20px;
   font-family: "Segoe UI", sans-serif;
@@ -215,9 +215,191 @@ section {
   width: 540px;
   height: 60px;
 }
+/* latest section*/
 
-@media screen and (max-width: 576px) {
-  .navbar {
-    flex-direction: column;
-  }
+.latest-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 0px 80px 0px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+.latest-container h2 {
+  font-size: 45px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.latest-container p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.bloom-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.bloom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+.bloom-right {
+  flex: 2;
+}
+.bloom-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.bloom-box.boll {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.bloom-box img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.bloom-over {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.bloom-over h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.bloom-over u {
+  padding: 8px 16px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Subscribe Section style */
+.sub-container {
+  width: 100%;
+  background: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 150px 20px;
+}
+.sub-item {
+  padding: 40px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #faf7f7;
+  font-size: 40px;
+}
+.Subscribe-form h2 {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.Subscribe-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-content: center;
+}
+.Subscribe-form input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  width: 80%;
+  outline: none;
+}
+.Subscribe-form button {
+  padding: 13px 24px;
+  font-size: 16px;
+  background-color: #e67e22;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/*footer section style*/
+.footer-container {
+  max-width: 1140px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 150px;
+  background-color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+.footer-logo {
+  flex: 1;
+  min-width: 260px;
+}
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.footer-text {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.footer-block {
+  flex: 2;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  min-width: 280px;
+}
+.colam {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.colam li {
+  margin-bottom: 8px;
+}
+.colam a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+.footer-social {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
 }

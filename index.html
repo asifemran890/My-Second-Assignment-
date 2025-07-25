@@ -12,20 +12,25 @@
   </head>
   <body>
     <!--navber-->
-    <nav class="navbar container">
-      <div class="logo">
-        <img src="./assets/logo.png" alt="Faugei Logo" />
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="Faugei Logo" />
+          </div>
+          <div class="nav-right container">
+            <ul class="nav-links">
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+            <div class="cart">
+              <i class="fas fa-shopping-cart"></i> Cart ($56)
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-        <div class="cart"><i class="fas fa-shopping-cart"></i> Cart ($56)</div>
-      </div>
-    </nav>
-
+    </header>
     <main>
       <!--FLOWERS section-->
       <section>
@@ -48,7 +53,7 @@
       </section>
       <!-- our plant-->
       <section>
-        <div class="plant-container container">
+        <div class="plant-container">
           <div class="plant-items">
             <h2><span class="text-orange">Our</span> Plants</h2>
             <p class="indulge-text">
@@ -153,6 +158,94 @@
           </div>
         </div>
       </section>
+      <!--latest deals section-->
+      <section>
+        <div class="latest-container">
+          <h2><span class="text-orange">Latest</span> Deals</h2>
+          <p>
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From <br />classic roses to exotic blooms, we offer a
+            wide variety of fresh.
+          </p>
+        </div>
+        <div class="bloom-container container">
+          <div class="bloom-left">
+            <div class="bloom-box">
+              <img src="./assets/deal-bloom.png" alt="" />
+              <div class="bloom-over">
+                <h3>60% Off | Bloom Plant</h3>
+                <u>Shop Now</u>
+              </div>
+            </div>
+            <div class="bloom-box">
+              <img src="./assets/deal-ana.png" alt="" />
+              <div class="bloom-over">
+                <h3>30% Off | Ana Plant</h3>
+                <u>Shop Now</u>
+              </div>
+            </div>
+          </div>
+          <div class="bloom-right">
+            <div class="bloom-box boll">
+              <img src="./assets/deal-zabo.png" alt="" />
+              <div class="bloom-over">
+                <h3>25% Off | Zabo Plant</h3>
+                <u>Shop Now</u>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sub-container">
+          <div class="sub-item">
+            <h2>Join the colorful Bunch</h2>
+            <form class="Subscribe-form">
+              <input type="email" placeholder="Write email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <!--footer section-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="" />
+          <p class="footer-text">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+        <div class="footer-block">
+          <ul class="colam">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="colam">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href="#"
+            ><img src="./assets/icon-linkedin.png" alt="linkedin"
+          /></a>
+          <a href="#"><img src="./assets/icon-twitter.png" alt="twitter" /></a>
+          <a href="#"
+            ><img src="./assets/icon-facebook.png" alt="facebook"
+          /></a>
+          <a href="#"><img src="./assets/icon-youtube.png" alt="youtube" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
